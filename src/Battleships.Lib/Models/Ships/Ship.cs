@@ -3,9 +3,19 @@
     public abstract class Ship
     {
         public int Size { get; }
-        public List<int> Coordinates { get; } = new List<int>();
 
-        public Ship(int size)
+        private IReadOnlyCollection<Coordinate> coordinates = new List<Coordinate>();
+        public IReadOnlyCollection<Coordinate> Coordinates
+        {
+            get => coordinates;
+            set
+            {
+                if (value.Count != Size) { throw new ApplicationException("Amount of coordinates does not match the ship size"); }
+                coordinates = value;
+            }
+        }
+
+        internal Ship(int size)
         {
             Size = size;
         }
