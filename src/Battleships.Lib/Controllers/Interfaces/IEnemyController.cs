@@ -1,4 +1,4 @@
-﻿namespace Battleships.Lib.Controllers
+﻿namespace Battleships.Lib.Controllers.Interfaces
 {
     internal interface IEnemyController
     {

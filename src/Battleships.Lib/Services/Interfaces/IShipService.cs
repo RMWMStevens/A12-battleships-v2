@@ -1,7 +1,7 @@
 ﻿using Battleships.Lib.Models;
 using Battleships.Lib.Models.Ships;
 
-namespace Battleships.Lib.Services
+namespace Battleships.Lib.Services.Interfaces
 {
     internal interface IShipService
     {

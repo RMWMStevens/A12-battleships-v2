@@ -1,5 +1,6 @@
 ﻿using Battleships.Lib.Models;
 using Battleships.Lib.Models.Ships;
+using Battleships.Lib.Services.Interfaces;
 
 namespace Battleships.Lib.Services
 {

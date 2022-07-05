@@ -1,4 +1,6 @@
 using Battleships.GUI.Blazor.Data;
+using Battleships.Lib.Controllers;
+using Battleships.Lib.Controllers.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -6,6 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 builder.Services.AddSingleton<WeatherForecastService>();
+builder.Services.AddSingleton<IGameController, GameController>();
 
 var app = builder.Build();
 
