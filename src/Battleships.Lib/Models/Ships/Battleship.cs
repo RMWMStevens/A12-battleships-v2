@@ -2,6 +2,6 @@
 {
     public class Battleship : Ship
     {
-        internal Battleship() : base(size: 4) { }
+        public Battleship() : base(size: 4) { }
     }
 }

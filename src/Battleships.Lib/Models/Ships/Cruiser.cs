@@ -2,6 +2,6 @@
 {
     public class Cruiser : Ship
     {
-        internal Cruiser() : base(size: 3) { }
+        public Cruiser() : base(size: 3) { }
     }
 }

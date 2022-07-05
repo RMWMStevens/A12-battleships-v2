@@ -2,6 +2,6 @@
 {
     public class Carrier : Ship
     {
-        internal Carrier() : base(size: 5) { }
+        public Carrier() : base(size: 5) { }
     }
 }

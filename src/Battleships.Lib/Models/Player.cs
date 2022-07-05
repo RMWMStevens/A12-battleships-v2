@@ -4,12 +4,10 @@ namespace Battleships.Lib.Models
 {
     public class Player
     {
-        public Grid Grid { get; }
-        public IReadOnlyCollection<Ship> Ships { get; }
+        public List<Ship> Ships { get; }
 
-        internal Player()
+        public Player()
         {
-            Grid = new();
             Ships = new List<Ship>()
             {
                 new Carrier(),
