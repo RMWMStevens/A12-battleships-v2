@@ -2,6 +2,6 @@
 {
     public class Submarine : Ship
     {
-        public Submarine() : base(size: 3) { }
+        internal Submarine() : base(size: 3) { }
     }
 }

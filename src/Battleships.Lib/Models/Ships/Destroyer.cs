@@ -2,6 +2,6 @@
 {
     public class Destroyer : Ship
     {
-        public Destroyer() : base(size: 2) { }
+        internal Destroyer() : base(size: 2) { }
     }
 }
