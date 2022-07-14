@@ -1,5 +1,21 @@
-﻿<h3>GridComponent</h3>
+﻿@using Battleships.Lib.Models
+
+<svg xmlns="http://www.w3.org/2000/svg" width="@tileSize * 10" height="@tileSize * 10">
+
+    @foreach (var coordinate in Player.Grid.Coordinates)
+    {
+        <rect width="@tileSize" height="@tileSize" x="@(coordinate.Position * tileSize % 1000)" y="@(coordinate.Position * tileSize)"/>
+        <h3>@coordinate.Position</h3>
+    }
+
+</svg>
 
 @code {
+    int tileSize = 50;
 
+    [Parameter]
+    public Player Player { get; set; }
+
+    [Parameter]
+    public EventCallback OnComplete { get; set; }
 }

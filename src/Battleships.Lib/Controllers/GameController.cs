@@ -5,13 +5,17 @@ namespace Battleships.Lib.Controllers
 {
     public class GameController : IGameController
     {
-        public Player PlayerA { get; }
-        public Player PlayerB { get; }
+        private readonly Player playerA;
+        private readonly Player playerB;
+
+        public Player GetPlayerA() => playerA;
+
+        public Player GetPlayerB() => playerB;
 
         public GameController()
         {
-            PlayerA = new Player();
-            PlayerB = new Player();
+            playerA = new Player();
+            playerB = new Player();
         }
 
         public void Setup()
