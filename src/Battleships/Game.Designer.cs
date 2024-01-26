@@ -29,39 +29,39 @@ partial class Battleships
     private void InitializeComponent()
     {
         System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Battleships));
-        playerTile0 = new PictureBox();
-        cpuTile0 = new PictureBox();
-        ((System.ComponentModel.ISupportInitialize)playerTile0).BeginInit();
-        ((System.ComponentModel.ISupportInitialize)cpuTile0).BeginInit();
+        playerTile00 = new PictureBox();
+        cpuTile00 = new PictureBox();
+        ((System.ComponentModel.ISupportInitialize)playerTile00).BeginInit();
+        ((System.ComponentModel.ISupportInitialize)cpuTile00).BeginInit();
         SuspendLayout();
         // 
-        // playerTile0
+        // playerTile00
         // 
-        playerTile0.BackColor = Color.DeepSkyBlue;
-        playerTile0.BackgroundImage = (Image)resources.GetObject("playerTile0.BackgroundImage");
-        playerTile0.BackgroundImageLayout = ImageLayout.Stretch;
-        playerTile0.BorderStyle = BorderStyle.FixedSingle;
-        playerTile0.Location = new Point(37, 37);
-        playerTile0.Margin = new Padding(4);
-        playerTile0.Name = "playerTile0";
-        playerTile0.Size = new Size(55, 55);
-        playerTile0.TabIndex = 0;
-        playerTile0.TabStop = false;
-        playerTile0.Tag = "";
+        playerTile00.BackColor = Color.DeepSkyBlue;
+        playerTile00.BackgroundImage = (Image)resources.GetObject("playerTile00.BackgroundImage");
+        playerTile00.BackgroundImageLayout = ImageLayout.Stretch;
+        playerTile00.BorderStyle = BorderStyle.FixedSingle;
+        playerTile00.Location = new Point(37, 37);
+        playerTile00.Margin = new Padding(4);
+        playerTile00.Name = "playerTile00";
+        playerTile00.Size = new Size(55, 55);
+        playerTile00.TabIndex = 0;
+        playerTile00.TabStop = false;
+        playerTile00.Tag = "";
         // 
-        // cpuTile0
+        // cpuTile00
         // 
-        cpuTile0.BackColor = Color.DeepSkyBlue;
-        cpuTile0.BackgroundImage = (Image)resources.GetObject("cpuTile0.BackgroundImage");
-        cpuTile0.BackgroundImageLayout = ImageLayout.Stretch;
-        cpuTile0.BorderStyle = BorderStyle.FixedSingle;
-        cpuTile0.Location = new Point(867, 37);
-        cpuTile0.Margin = new Padding(4);
-        cpuTile0.Name = "cpuTile0";
-        cpuTile0.Size = new Size(55, 55);
-        cpuTile0.TabIndex = 1;
-        cpuTile0.TabStop = false;
-        cpuTile0.Tag = "";
+        cpuTile00.BackColor = Color.DeepSkyBlue;
+        cpuTile00.BackgroundImage = (Image)resources.GetObject("cpuTile00.BackgroundImage");
+        cpuTile00.BackgroundImageLayout = ImageLayout.Stretch;
+        cpuTile00.BorderStyle = BorderStyle.FixedSingle;
+        cpuTile00.Location = new Point(867, 37);
+        cpuTile00.Margin = new Padding(4);
+        cpuTile00.Name = "cpuTile00";
+        cpuTile00.Size = new Size(55, 55);
+        cpuTile00.TabIndex = 1;
+        cpuTile00.TabStop = false;
+        cpuTile00.Tag = "";
         // 
         // Battleships
         // 
@@ -69,21 +69,21 @@ partial class Battleships
         BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
         BackgroundImageLayout = ImageLayout.Stretch;
         ClientSize = new Size(1538, 803);
-        Controls.Add(playerTile0);
-        Controls.Add(cpuTile0);
+        Controls.Add(playerTile00);
+        Controls.Add(cpuTile00);
         FormBorderStyle = FormBorderStyle.None;
         Icon = (Icon)resources.GetObject("$this.Icon");
         Name = "Battleships";
         StartPosition = FormStartPosition.CenterScreen;
         Text = "Battleships";
         Load += Battleships_Load;
-        ((System.ComponentModel.ISupportInitialize)playerTile0).EndInit();
-        ((System.ComponentModel.ISupportInitialize)cpuTile0).EndInit();
+        ((System.ComponentModel.ISupportInitialize)playerTile00).EndInit();
+        ((System.ComponentModel.ISupportInitialize)cpuTile00).EndInit();
         ResumeLayout(false);
     }
 
     #endregion
 
-    private PictureBox playerTile0;
-    private PictureBox cpuTile0;
+    private PictureBox playerTile00;
+    private PictureBox cpuTile00;
 }
